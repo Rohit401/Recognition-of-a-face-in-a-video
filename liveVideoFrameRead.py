@@ -25,7 +25,7 @@ ap.add_argument("--no-savedata", dest="savedata", action = "store_false")
 ap.set_defaults(savedata = False)
 args = vars(ap.parse_args())
 
-path = '/Users/joycezheng/FacialRecognitionVideo/'
+path = '/Users/samal/FacialRecognitionVideo/'
 learn = load_learner(path, 'export.pkl')
 
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
